@@ -24,9 +24,9 @@ print(skillsDictonary)
 
 print("Are you happy with your selection?")
 satisfied = input()
-if satisfied == 'Y':
+if satisfied == 'Y' or satisfied == 'y':
     quit()
-if satisfied == 'N':
+if satisfied == 'N' or satisfied == 'n':
     print("Which Selection Would You Change?")
     choice = int(input())
     skillsDictonary.update({choice:(str(giveProperty())) + " " + str(propertyValue())})
